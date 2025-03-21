@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Order</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .product { margin-bottom: 10px; display: flex; align-items: center; }
+        .product img { width: 200px; height: auto; margin-right: 10px; }
+        .product label { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Select Pepsi Products</h2>
+    <div id="products">
+        <div class="product">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg" alt="Pepsi 500ml">
+            <label>Pepsi 500ml</label>
+            <input type="number" min="0" value="0" id="pepsi500">
+        </div>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/415Vd+OFBxL._SY300_SX300_.jpg" alt="Pepsi 1L">
+            <label>Pepsi 1L</label>
+            <input type="number" min="0" value="0" id="pepsi1L">
+        </div>
+        <div class="product">
+            <img src="https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg" alt="Mountain Due">
+            <label>Pepsi 2L</label>
+            <input type="number" min="0" value="0" id="mountaindue">
+        </div>
+    </div>
+    <button onclick="sendOrder()">Submit Order</button>
+
+    <script>
+        function sendOrder() {
+            let pepsi500 = document.getElementById("pepsi500").value;
+            let pepsi1L = document.getElementById("pepsi1L").value;
+            let pepsi2L = document.getElementById("pepsi2L").value;
+            
+            let orderText = "Pepsi Order:\n";
+            if (pepsi500 > 0) orderText += `Pepsi 500ml: ${pepsi500}\n`;
+            if (pepsi1L > 0) orderText += `Pepsi 1L: ${pepsi1L}\n`;
+            if (pepsi2L > 0) orderText += `Pepsi 2L: ${pepsi2L}\n`;
+            
+            if (orderText === "Pepsi Order:\n") {
+                alert("Please select at least one product.");
+                return;
+            }
+            
+            let whatsappUrl = `https://wa.me/919998979073?text=${encodeURIComponent(orderText)}`;
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+</body>
+</html>
