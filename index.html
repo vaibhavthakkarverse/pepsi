@@ -6,9 +6,15 @@
     <title>Pepsi Order</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
-        .product { margin-bottom: 10px; display: flex; align-items: center; }
-        .product img { width: 200px; height: auto; margin-right: 10px; }
+        .product { margin-bottom: 20px; display: flex; align-items: center; }
+        .product img { width: 120px; height: auto; margin-right: 10px; }
         .product label { margin-right: 10px; }
+        .button-container { margin-top: 20px; }
+        button { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .quantity-inputs { display: flex; flex-direction: column; gap: 5px; }
+        .input-group { display: flex; align-items: center; gap: 10px; }
+        .price-info { color: #666; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -16,37 +22,105 @@
     <div id="products">
         <div class="product">
             <img src="https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg" alt="Pepsi 500ml">
-            <label>Pepsi 500ml</label>
-            <input type="number" min="0" value="0" id="pepsi500">
+            <div class="quantity-inputs">
+                <div class="input-group">
+                    <label>Pepsi 500ml</label>
+                    <span class="price-info">(₹480/box, ₹40/piece)</span>
+                </div>
+                <div class="input-group">
+                    <label>Boxes:</label>
+                    <input type="number" min="0" value="0" id="pepsi500_box">
+                </div>
+                <div class="input-group">
+                    <label>Loose:</label>
+                    <input type="number" min="0" value="0" id="pepsi500_loose">
+                </div>
+            </div>
         </div>
         <div class="product">
             <img src="https://m.media-amazon.com/images/I/415Vd+OFBxL._SY300_SX300_.jpg" alt="Pepsi 1L">
-            <label>Pepsi 1L</label>
-            <input type="number" min="0" value="0" id="pepsi1L">
+            <div class="quantity-inputs">
+                <div class="input-group">
+                    <label>Pepsi 1L</label>
+                    <span class="price-info">(₹600/box, ₹50/piece)</span>
+                </div>
+                <div class="input-group">
+                    <label>Boxes:</label>
+                    <input type="number" min="0" value="0" id="pepsi1L_box">
+                </div>
+                <div class="input-group">
+                    <label>Loose:</label>
+                    <input type="number" min="0" value="0" id="pepsi1L_loose">
+                </div>
+            </div>
         </div>
         <div class="product">
-            <img src="https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg" alt="Mountain Due">
-            <label>Mountain Due</label>
-            <input type="number" min="0" value="0" id="mountaindue">
+            <img src="https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg" alt="Mountain Dew">
+            <div class="quantity-inputs">
+                <div class="input-group">
+                    <label>Mountain Dew</label>
+                    <span class="price-info">(₹480/box, ₹40/piece)</span>
+                </div>
+                <div class="input-group">
+                    <label>Boxes:</label>
+                    <input type="number" min="0" value="0" id="mountaindew_box">
+                </div>
+                <div class="input-group">
+                    <label>Loose:</label>
+                    <input type="number" min="0" value="0" id="mountaindew_loose">
+                </div>
+            </div>
         </div>
     </div>
-    <button onclick="sendOrder()">Submit Order</button>
+    <div class="button-container">
+        <button onclick="sendOrder()">Submit Order</button>
+    </div>
+    <script>    
+        const PRICES = {
+            pepsi500: { box: 480, loose: 40 },
+            pepsi1L: { box: 600, loose: 50 },
+            mountaindew: { box: 480, loose: 40 }
+        };
 
-    <script>
+        function calculateTotal(product, boxQty, looseQty) {
+            return (boxQty * PRICES[product].box) + (looseQty * PRICES[product].loose);
+        }
+
         function sendOrder() {
-            let pepsi500 = document.getElementById("pepsi500").value;
-            let pepsi1L = document.getElementById("pepsi1L").value;
-            let mountaindue = document.getElementById("mountaindue").value;
+            let pepsi500_box = parseInt(document.getElementById("pepsi500_box").value) || 0;
+            let pepsi500_loose = parseInt(document.getElementById("pepsi500_loose").value) || 0;
+            let pepsi1L_box = parseInt(document.getElementById("pepsi1L_box").value) || 0;
+            let pepsi1L_loose = parseInt(document.getElementById("pepsi1L_loose").value) || 0;
+            let mountaindew_box = parseInt(document.getElementById("mountaindew_box").value) || 0;
+            let mountaindew_loose = parseInt(document.getElementById("mountaindew_loose").value) || 0;
             
+            let totalAmount = 0;
             let orderText = "Pepsi Order:\n";
-            if (pepsi500 > 0) orderText += `Pepsi 500ml: ${pepsi500}\n`;
-            if (pepsi1L > 0) orderText += `Pepsi 1L: ${pepsi1L}\n`;
-            if (mountaindue > 0) orderText += `Mountain Due: ${mountaindue}\n`;
             
-            if (orderText === "Pepsi Order:\n") {
+            if (pepsi500_box > 0 || pepsi500_loose > 0) {
+                const pepsi500Total = calculateTotal('pepsi500', pepsi500_box, pepsi500_loose);
+                orderText += `Pepsi 500ml:\n- Boxes: ${pepsi500_box}\n- Loose: ${pepsi500_loose}\n- Amount: ₹${pepsi500Total}\n\n`;
+                totalAmount += pepsi500Total;
+            }
+            
+            if (pepsi1L_box > 0 || pepsi1L_loose > 0) {
+                const pepsi1LTotal = calculateTotal('pepsi1L', pepsi1L_box, pepsi1L_loose);
+                orderText += `Pepsi 1L:\n- Boxes: ${pepsi1L_box}\n- Loose: ${pepsi1L_loose}\n- Amount: ₹${pepsi1LTotal}\n\n`;
+                totalAmount += pepsi1LTotal;
+            }
+            
+            if (mountaindew_box > 0 || mountaindew_loose > 0) {
+                const mountaindewTotal = calculateTotal('mountaindew', mountaindew_box, mountaindew_loose);
+                orderText += `Mountain Dew:\n- Boxes: ${mountaindew_box}\n- Loose: ${mountaindew_loose}\n- Amount: ₹${mountaindewTotal}\n\n`;
+                totalAmount += mountaindewTotal;
+            }
+            
+            if (totalAmount === 0) {
                 alert("Please select at least one product.");
                 return;
             }
+            
+            orderText += `Total Amount: ₹${totalAmount}`;
             
             let whatsappUrl = `https://wa.me/919998984223?text=${encodeURIComponent(orderText)}`;
             window.open(whatsappUrl, "_blank");
