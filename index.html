@@ -36,12 +36,12 @@
         function sendOrder() {
             let pepsi500 = document.getElementById("pepsi500").value;
             let pepsi1L = document.getElementById("pepsi1L").value;
-            let pepsi2L = document.getElementById("pepsi2L").value;
+            let pepsi2L = document.getElementById("mountaindue").value;
             
             let orderText = "Pepsi Order:\n";
             if (pepsi500 > 0) orderText += `Pepsi 500ml: ${pepsi500}\n`;
             if (pepsi1L > 0) orderText += `Pepsi 1L: ${pepsi1L}\n`;
-            if (pepsi2L > 0) orderText += `Pepsi 2L: ${pepsi2L}\n`;
+            if (pepsi2L > 0) orderText += `Pepsi 2L: ${mountaindue}\n`;
             
             if (orderText === "Pepsi Order:\n") {
                 alert("Please select at least one product.");
