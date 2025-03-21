@@ -99,19 +99,28 @@
             
             if (pepsi500_box > 0 || pepsi500_loose > 0) {
                 const pepsi500Total = calculateTotal('pepsi500', pepsi500_box, pepsi500_loose);
-                orderText += `Pepsi 500ml:\n- Boxes: ${pepsi500_box}\n- Loose: ${pepsi500_loose}\n- Amount: ₹${pepsi500Total}\n\n`;
+                orderText += `Pepsi 500ml:`;
+                if (pepsi500_box > 0) orderText += `\n- Boxes: ${pepsi500_box}`;
+                if (pepsi500_loose > 0) orderText += `\n- Loose: ${pepsi500_loose}`;
+                orderText += `\n- Amount: ₹${pepsi500Total}\n\n`;
                 totalAmount += pepsi500Total;
             }
             
             if (pepsi1L_box > 0 || pepsi1L_loose > 0) {
                 const pepsi1LTotal = calculateTotal('pepsi1L', pepsi1L_box, pepsi1L_loose);
-                orderText += `Pepsi 1L:\n- Boxes: ${pepsi1L_box}\n- Loose: ${pepsi1L_loose}\n- Amount: ₹${pepsi1LTotal}\n\n`;
+                orderText += `Pepsi 1L:`;
+                if (pepsi1L_box > 0) orderText += `\n- Boxes: ${pepsi1L_box}`;
+                if (pepsi1L_loose > 0) orderText += `\n- Loose: ${pepsi1L_loose}`;
+                orderText += `\n- Amount: ₹${pepsi1LTotal}\n\n`;
                 totalAmount += pepsi1LTotal;
             }
             
             if (mountaindew_box > 0 || mountaindew_loose > 0) {
                 const mountaindewTotal = calculateTotal('mountaindew', mountaindew_box, mountaindew_loose);
-                orderText += `Mountain Dew:\n- Boxes: ${mountaindew_box}\n- Loose: ${mountaindew_loose}\n- Amount: ₹${mountaindewTotal}\n\n`;
+                orderText += `Mountain Dew:`;
+                if (mountaindew_box > 0) orderText += `\n- Boxes: ${mountaindew_box}`;
+                if (mountaindew_loose > 0) orderText += `\n- Loose: ${mountaindew_loose}`;
+                orderText += `\n- Amount: ₹${mountaindewTotal}\n\n`;
                 totalAmount += mountaindewTotal;
             }
             
