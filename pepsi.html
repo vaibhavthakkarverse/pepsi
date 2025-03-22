@@ -5,33 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi Order</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .product-group { margin-bottom: 30px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
-        .group-header { font-size: 1.5em; margin-bottom: 15px; color: #333; }
-        .group-content { display: flex; gap: 15px; align-items: flex-start; }
-        .group-image { width: 100px; height: auto; flex-shrink: 0; }
-        .product { margin-bottom: 8px; }
-        .product label { margin-right: 3px; font-size: 0.9em; }
-        .button-container { margin-top: 20px; }
-        button { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background-color: #0056b3; }
-        .quantity-inputs { display: flex; flex-direction: column; gap: 5px; }
-        .input-group { display: flex; align-items: center; gap: 3px; }
-        .price-info { color: #666; font-size: 0.8em; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
-        .error-message { color: red; margin: 20px 0; }
-        .product-list { flex-grow: 1; }
-        input[type="number"] { width: 40px; padding: 2px; font-size: 0.9em; }
-        .product-row { display: flex; align-items: center; gap: 5px; }
-        .product-size { min-width: 60px; }
-        .product-inputs { display: flex; gap: 5px; }
-        .group-image-container { flex-shrink: 0; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        }
+
+        .product-group { 
+            margin-bottom: 30px; 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 8px; 
+        }
+
+        .group-header { 
+            font-size: 1.5em; 
+            margin-bottom: 15px; 
+            color: #333; 
+        }
+
+        .group-content { 
+            display: flex; 
+            gap: 20px; 
+            align-items: flex-start; 
+            flex-wrap: wrap;
+        }
+
+        .group-image-container { 
+            flex-shrink: 0; 
+            width: 150px; 
+        }
+
+        .group-image { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+        }
+
+        .product-list { 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+
+        .product-row { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            width: 100%; 
+        }
+
+        .product-size { 
+            min-width: 120px; 
+        }
+
+        .product-inputs { 
+            display: flex; 
+            gap: 10px; 
+            flex-wrap: nowrap; 
+        }
+
+        .input-group { 
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+        }
+
+        .price-info { 
+            color: #666; 
+            font-size: 0.8em; 
+        }
+
+        .button-container { 
+            margin-top: 20px; 
+        }
+
+        button { 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        button:hover { 
+            background-color: #0056b3; 
+        }
+
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+            gap: 20px; 
+        }
+
+        .error-message { 
+            color: red; 
+            margin: 20px 0; 
+        }
+
+        input[type="number"] { 
+            width: 50px; 
+            padding: 5px; 
+            font-size: 0.9em; 
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        .checkbox-container label {
+            font-size: 0.9em;
+        }
+
         @media (max-width: 600px) {
-            .group-content { flex-direction: column; }
-            .group-image { width: 80px; }
-            .product-grid { grid-template-columns: 1fr; }
-            .product-row { flex-direction: column; align-items: flex-start; }
-            .product-inputs { width: 100%; justify-content: space-between; }
+            .group-content { 
+                flex-direction: column; 
+                align-items: center;
+            }
+            .group-image-container { 
+                width: 80px; 
+            }
+            .product-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .product-row { 
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+            .product-inputs { 
+                width: 100%; 
+                justify-content: space-between; 
+            }
         }
     </style>
 </head>
@@ -39,7 +152,6 @@
     <h2>Select Pepsi Products</h2>
     <div id="error" class="error-message"></div>
     <div id="products" class="product-grid">
-        <!-- Products will be dynamically loaded here -->
     </div>
     <div class="button-container">
         <button onclick="sendOrder()">Submit Order</button>
@@ -55,12 +167,12 @@
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const csvText = await response.text();
-                const rows = csvText.split('\n').slice(1); // Skip header row
+                const rows = csvText.split('\n').slice(1);
                 
                 products = rows
-                    .filter(row => row.trim()) // Skip empty rows
+                    .filter(row => row.trim())
                     .map(row => {
-                        const [id, name, size, group_id, box_price, piece_price, image_url] = row.split(',').map(field => field.trim());
+                        const [id, name, size, group_id, box_price, piece_price, image_url, fixed_loose_qty] = row.split(',').map(field => field.trim());
                         return {
                             id,
                             name,
@@ -68,7 +180,8 @@
                             group_id,
                             box_price: parseInt(box_price),
                             piece_price: parseInt(piece_price),
-                            image_url
+                            image_url,
+                            fixed_loose_qty: parseInt(fixed_loose_qty)
                         };
                     });
 
@@ -76,13 +189,12 @@
                     throw new Error('No products found in the CSV file');
                 }
 
-                // Group products by group_id
                 products.forEach(product => {
                     if (!productGroups[product.group_id]) {
                         productGroups[product.group_id] = {
                             name: product.name,
                             products: [],
-                            image_url: product.image_url // Use the first product's image for the group
+                            image_url: product.image_url
                         };
                     }
                     productGroups[product.group_id].products.push(product);
@@ -124,22 +236,20 @@
 
                 group.products.forEach(product => {
                     const productElement = document.createElement('div');
-                    productElement.className = 'product';
+                    productElement.className = 'product-row';
                     productElement.innerHTML = `
-                        <div class="product-row">
-                            <div class="product-size">
-                                <label>${product.size}</label>
-                                <span class="price-info">(₹${product.box_price}/box, ₹${product.piece_price}/piece)</span>
+                        <div class="product-size">
+                            <label>${product.size}</label>
+                            <span class="price-info">(₹${product.box_price}/box, ₹${product.piece_price}/piece)</span>
+                        </div>
+                        <div class="product-inputs">
+                            <div class="input-group">
+                                <label>Box:</label>
+                                <input type="number" min="0" value="0" id="${product.id}_box">
                             </div>
-                            <div class="product-inputs">
-                                <div class="input-group">
-                                    <label>Box:</label>
-                                    <input type="number" min="0" value="0" id="${product.id}_box">
-                                </div>
-                                <div class="input-group">
-                                    <label>Loose:</label>
-                                    <input type="number" min="0" value="0" id="${product.id}_loose">
-                                </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="${product.id}_loose" data-fixed-qty="${product.fixed_loose_qty}">
+                                <label>Loose (${product.fixed_loose_qty})</label>
                             </div>
                         </div>
                     `;
@@ -162,7 +272,8 @@
 
             products.forEach(product => {
                 const boxQty = parseInt(document.getElementById(`${product.id}_box`).value) || 0;
-                const looseQty = parseInt(document.getElementById(`${product.id}_loose`).value) || 0;
+                const looseCheckbox = document.getElementById(`${product.id}_loose`);
+                const looseQty = looseCheckbox.checked ? product.fixed_loose_qty : 0;
 
                 if (boxQty > 0 || looseQty > 0) {
                     const productTotal = calculateTotal(product, boxQty, looseQty);
@@ -184,7 +295,6 @@
             window.open(whatsappUrl, "_blank");
         }
 
-        // Load products when the page loads
         loadProducts();
     </script>
 </body>
