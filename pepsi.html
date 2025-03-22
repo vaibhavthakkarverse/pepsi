@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Order</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .product-group { margin-bottom: 30px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+        .group-header { font-size: 1.5em; margin-bottom: 15px; color: #333; }
+        .product { margin-bottom: 20px; display: flex; align-items: center; }
+        .product img { width: 120px; height: auto; margin-right: 10px; }
+        .product label { margin-right: 10px; }
+        .button-container { margin-top: 20px; }
+        button { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .quantity-inputs { display: flex; flex-direction: column; gap: 5px; }
+        .input-group { display: flex; align-items: center; gap: 10px; }
+        .price-info { color: #666; font-size: 0.9em; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .error-message { color: red; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h2>Select Pepsi Products</h2>
+    <div id="error" class="error-message"></div>
+    <div id="products" class="product-grid">
+        <!-- Products will be dynamically loaded here -->
+    </div>
+    <div class="button-container">
+        <button onclick="sendOrder()">Submit Order</button>
+    </div>
+    <script>
+        let products = [];
+        let productGroups = {};
+
+        async function loadProducts() {
+            try {
+                // Using relative path - both files should be in the same directory on the hosting service
+                const response = await fetch('./products.csv');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const csvText = await response.text();
+                const rows = csvText.split('\n').slice(1); // Skip header row
+                
+                products = rows
+                    .filter(row => row.trim()) // Skip empty rows
+                    .map(row => {
+                        const [id, name, size, group_id, box_price, piece_price, image_url] = row.split(',').map(field => field.trim());
+                        return {
+                            id,
+                            name,
+                            size,
+                            group_id,
+                            box_price: parseInt(box_price),
+                            piece_price: parseInt(piece_price),
+                            image_url
+                        };
+                    });
+
+                if (products.length === 0) {
+                    throw new Error('No products found in the CSV file');
+                }
+
+                // Group products by group_id
+                products.forEach(product => {
+                    if (!productGroups[product.group_id]) {
+                        productGroups[product.group_id] = {
+                            name: product.name,
+                            products: []
+                        };
+                    }
+                    productGroups[product.group_id].products.push(product);
+                });
+
+                renderProducts();
+            } catch (error) {
+                console.error('Error loading products:', error);
+                document.getElementById('error').innerHTML = `
+                    Error loading products: ${error.message}<br>
+                    Please make sure products.csv is in the same directory as this HTML file.
+                `;
+            }
+        }
+
+        function renderProducts() {
+            const productsContainer = document.getElementById('products');
+            productsContainer.innerHTML = '';
+
+            Object.entries(productGroups).forEach(([group_id, group]) => {
+                const groupElement = document.createElement('div');
+                groupElement.className = 'product-group';
+                
+                const groupHeader = document.createElement('div');
+                groupHeader.className = 'group-header';
+                groupHeader.textContent = group.name;
+                groupElement.appendChild(groupHeader);
+
+                group.products.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.className = 'product';
+                    productElement.innerHTML = `
+                        <img src="${product.image_url}" alt="${product.name} ${product.size}">
+                        <div class="quantity-inputs">
+                            <div class="input-group">
+                                <label>${product.name} ${product.size}</label>
+                                <span class="price-info">(₹${product.box_price}/box, ₹${product.piece_price}/piece)</span>
+                            </div>
+                            <div class="input-group">
+                                <label>Boxes:</label>
+                                <input type="number" min="0" value="0" id="${product.id}_box">
+                            </div>
+                            <div class="input-group">
+                                <label>Loose:</label>
+                                <input type="number" min="0" value="0" id="${product.id}_loose">
+                            </div>
+                        </div>
+                    `;
+                    groupElement.appendChild(productElement);
+                });
+
+                productsContainer.appendChild(groupElement);
+            });
+        }
+
+        function calculateTotal(product, boxQty, looseQty) {
+            return (boxQty * product.box_price) + (looseQty * product.piece_price);
+        }
+
+        function sendOrder() {
+            let orderText = "Pepsi Order:\n";
+            let totalAmount = 0;
+
+            products.forEach(product => {
+                const boxQty = parseInt(document.getElementById(`${product.id}_box`).value) || 0;
+                const looseQty = parseInt(document.getElementById(`${product.id}_loose`).value) || 0;
+
+                if (boxQty > 0 || looseQty > 0) {
+                    const productTotal = calculateTotal(product, boxQty, looseQty);
+                    orderText += `${product.name} ${product.size}:`;
+                    if (boxQty > 0) orderText += `\n- Boxes: ${boxQty}`;
+                    if (looseQty > 0) orderText += `\n- Loose: ${looseQty}`;
+                    orderText += `\n- Amount: ₹${productTotal}\n\n`;
+                    totalAmount += productTotal;
+                }
+            });
+
+            if (totalAmount === 0) {
+                alert("Please select at least one product.");
+                return;
+            }
+
+            orderText += `Total Amount: ₹${totalAmount}`;
+            let whatsappUrl = `https://wa.me/919998984223?text=${encodeURIComponent(orderText)}`;
+            window.open(whatsappUrl, "_blank");
+        }
+
+        // Load products when the page loads
+        loadProducts();
+    </script>
+</body>
+</html>
