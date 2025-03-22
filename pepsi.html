@@ -8,8 +8,9 @@
         body { font-family: Arial, sans-serif; margin: 20px; }
         .product-group { margin-bottom: 30px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
         .group-header { font-size: 1.5em; margin-bottom: 15px; color: #333; }
-        .product { margin-bottom: 20px; display: flex; align-items: center; }
-        .product img { width: 120px; height: auto; margin-right: 10px; }
+        .group-content { display: flex; gap: 20px; align-items: flex-start; }
+        .group-image { width: 200px; height: auto; flex-shrink: 0; }
+        .product { margin-bottom: 15px; }
         .product label { margin-right: 10px; }
         .button-container { margin-top: 20px; }
         button { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
@@ -17,8 +18,20 @@
         .quantity-inputs { display: flex; flex-direction: column; gap: 5px; }
         .input-group { display: flex; align-items: center; gap: 10px; }
         .price-info { color: #666; font-size: 0.9em; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 20px; }
         .error-message { color: red; margin: 20px 0; }
+        .product-list { flex-grow: 1; }
+        input[type="number"] { width: 60px; padding: 4px; }
+        .product-row { display: flex; align-items: center; gap: 15px; }
+        .product-size { min-width: 80px; }
+        .product-inputs { display: flex; gap: 15px; }
+        @media (max-width: 600px) {
+            .group-content { flex-direction: column; }
+            .group-image { width: 120px; }
+            .product-grid { grid-template-columns: 1fr; }
+            .product-row { flex-direction: column; align-items: flex-start; }
+            .product-inputs { width: 100%; justify-content: space-between; }
+        }
     </style>
 </head>
 <body>
@@ -36,8 +49,7 @@
 
         async function loadProducts() {
             try {
-                // Using relative path - both files should be in the same directory on the hosting service
-                const response = await fetch('./products.csv');
+                const response = await fetch('https://vaibhavthakkarverse.github.io/pepsi/products.csv');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -68,7 +80,8 @@
                     if (!productGroups[product.group_id]) {
                         productGroups[product.group_id] = {
                             name: product.name,
-                            products: []
+                            products: [],
+                            image_url: product.image_url // Use the first product's image for the group
                         };
                     }
                     productGroups[product.group_id].products.push(product);
@@ -97,29 +110,42 @@
                 groupHeader.textContent = group.name;
                 groupElement.appendChild(groupHeader);
 
+                const groupContent = document.createElement('div');
+                groupContent.className = 'group-content';
+
+                const imageContainer = document.createElement('div');
+                imageContainer.innerHTML = `<img src="${group.image_url}" alt="${group.name}" class="group-image">`;
+                groupContent.appendChild(imageContainer);
+
+                const productList = document.createElement('div');
+                productList.className = 'product-list';
+
                 group.products.forEach(product => {
                     const productElement = document.createElement('div');
                     productElement.className = 'product';
                     productElement.innerHTML = `
-                        <img src="${product.image_url}" alt="${product.name} ${product.size}">
-                        <div class="quantity-inputs">
-                            <div class="input-group">
-                                <label>${product.name} ${product.size}</label>
+                        <div class="product-row">
+                            <div class="product-size">
+                                <label>${product.size}</label>
                                 <span class="price-info">(₹${product.box_price}/box, ₹${product.piece_price}/piece)</span>
                             </div>
-                            <div class="input-group">
-                                <label>Boxes:</label>
-                                <input type="number" min="0" value="0" id="${product.id}_box">
-                            </div>
-                            <div class="input-group">
-                                <label>Loose:</label>
-                                <input type="number" min="0" value="0" id="${product.id}_loose">
+                            <div class="product-inputs">
+                                <div class="input-group">
+                                    <label>Boxes:</label>
+                                    <input type="number" min="0" value="0" id="${product.id}_box">
+                                </div>
+                                <div class="input-group">
+                                    <label>Loose:</label>
+                                    <input type="number" min="0" value="0" id="${product.id}_loose">
+                                </div>
                             </div>
                         </div>
                     `;
-                    groupElement.appendChild(productElement);
+                    productList.appendChild(productElement);
                 });
 
+                groupContent.appendChild(productList);
+                groupElement.appendChild(groupContent);
                 productsContainer.appendChild(groupElement);
             });
         }
