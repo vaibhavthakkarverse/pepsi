@@ -8,26 +8,27 @@
         body { font-family: Arial, sans-serif; margin: 20px; }
         .product-group { margin-bottom: 30px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
         .group-header { font-size: 1.5em; margin-bottom: 15px; color: #333; }
-        .group-content { display: flex; gap: 20px; align-items: flex-start; }
-        .group-image { width: 200px; height: auto; flex-shrink: 0; }
-        .product { margin-bottom: 15px; }
-        .product label { margin-right: 10px; }
+        .group-content { display: flex; gap: 15px; align-items: flex-start; }
+        .group-image { width: 100px; height: auto; flex-shrink: 0; }
+        .product { margin-bottom: 8px; }
+        .product label { margin-right: 3px; font-size: 0.9em; }
         .button-container { margin-top: 20px; }
         button { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
         button:hover { background-color: #0056b3; }
         .quantity-inputs { display: flex; flex-direction: column; gap: 5px; }
-        .input-group { display: flex; align-items: center; gap: 10px; }
-        .price-info { color: #666; font-size: 0.9em; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 20px; }
+        .input-group { display: flex; align-items: center; gap: 3px; }
+        .price-info { color: #666; font-size: 0.8em; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
         .error-message { color: red; margin: 20px 0; }
         .product-list { flex-grow: 1; }
-        input[type="number"] { width: 60px; padding: 4px; }
-        .product-row { display: flex; align-items: center; gap: 15px; }
-        .product-size { min-width: 80px; }
-        .product-inputs { display: flex; gap: 15px; }
+        input[type="number"] { width: 40px; padding: 2px; font-size: 0.9em; }
+        .product-row { display: flex; align-items: center; gap: 5px; }
+        .product-size { min-width: 60px; }
+        .product-inputs { display: flex; gap: 5px; }
+        .group-image-container { flex-shrink: 0; }
         @media (max-width: 600px) {
             .group-content { flex-direction: column; }
-            .group-image { width: 120px; }
+            .group-image { width: 80px; }
             .product-grid { grid-template-columns: 1fr; }
             .product-row { flex-direction: column; align-items: flex-start; }
             .product-inputs { width: 100%; justify-content: space-between; }
@@ -114,6 +115,7 @@
                 groupContent.className = 'group-content';
 
                 const imageContainer = document.createElement('div');
+                imageContainer.className = 'group-image-container';
                 imageContainer.innerHTML = `<img src="${group.image_url}" alt="${group.name}" class="group-image">`;
                 groupContent.appendChild(imageContainer);
 
@@ -131,7 +133,7 @@
                             </div>
                             <div class="product-inputs">
                                 <div class="input-group">
-                                    <label>Boxes:</label>
+                                    <label>Box:</label>
                                     <input type="number" min="0" value="0" id="${product.id}_box">
                                 </div>
                                 <div class="input-group">
