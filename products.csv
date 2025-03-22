@@ -1,21 +1,21 @@
 id,name,size,group_id,box_price,piece_price,image_url
 pepsi_200ml,Pepsi,200ml,pepsi_group,240,20,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg
 pepsi_500ml,Pepsi,500ml,pepsi_group,480,40,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg
-pepsi_1l,Pepsi,1L,pepsi_group,600,50,https://m.media-amazon.com/images/I/415Vd+OFBxL._SY300_SX300_.jpg
-pepsi_2l,Pepsi,2.25L,pepsi_group,720,60,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
+pepsi_1l,Pepsi,1L,pepsi_group,600,50,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg
+pepsi_2l,Pepsi,2.25L,pepsi_group,720,60,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg
 pepsi_mountaindew_200ml,Mountain Dew,200ml,mountaindew_group,240,20,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg
 mountaindew_500ml,Mountain Dew,500ml,mountaindew_group,480,40,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg
-mountaindew_1l,Mountain Dew,1L,mountaindew_group,600,50,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg 
-pepsi_mountaindew_2l,Mountain Dew,2.25L,mountaindew_group,720,60,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_7up_200ml,7UP,200ml,7up_group,240,20,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_7up_500ml,7UP,500ml,7up_group,480,40,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_7up_1l,7UP,1L,7up_group,600,50,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_7up_2l,7UP,2.25L,7up_group,720,60,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_mirinda_200ml,Mirinda,200ml,mirinda_group,240,20,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_mirinda_500ml,Mirinda,500ml,mirinda_group,480,40,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_mirinda_1l,Mirinda,1L,mirinda_group,600,50,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_mirinda_2l,Mirinda,2.25L,mirinda_group,720,60,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_slice_200ml,Slice,200ml,slice_group,240,20,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_slice_500ml,Slice,500ml,slice_group,480,40,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_slice_1l,Slice,1L,slice_group,600,50,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
-pepsi_slice_2l,Slice,2.25L,slice_group,720,60,https://m.media-amazon.com/images/I/71+5m2q8fGL._SL1500_.jpg
+mountaindew_1l,Mountain Dew,1L,mountaindew_group,600,50,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg
+pepsi_mountaindew_2l,Mountain Dew,2.25L,mountaindew_group,720,60,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg
+pepsi_7up_200ml,7UP,200ml,7up_group,240,20,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png
+pepsi_7up_500ml,7UP,500ml,7up_group,480,40,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png
+pepsi_7up_1l,7UP,1L,7up_group,600,50,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png
+pepsi_7up_2l,7UP,2.25L,7up_group,720,60,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png
+pepsi_mirinda_200ml,Mirinda,200ml,mirinda_group,240,20,https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSpbNoXB-z1_65ITFkIH7LMfIjd68NCFAj4O74MY8o_G_tD-KwEITC6HFJP0vIHPD-S-8Kz-jXXxW3zD1QdGrUSHewzvFxXMgLyELKI0e-iQ46pesuycPghrQ
+pepsi_mirinda_500ml,Mirinda,500ml,mirinda_group,480,40,https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSpbNoXB-z1_65ITFkIH7LMfIjd68NCFAj4O74MY8o_G_tD-KwEITC6HFJP0vIHPD-S-8Kz-jXXxW3zD1QdGrUSHewzvFxXMgLyELKI0e-iQ46pesuycPghrQ
+pepsi_mirinda_1l,Mirinda,1L,mirinda_group,600,50,https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSpbNoXB-z1_65ITFkIH7LMfIjd68NCFAj4O74MY8o_G_tD-KwEITC6HFJP0vIHPD-S-8Kz-jXXxW3zD1QdGrUSHewzvFxXMgLyELKI0e-iQ46pesuycPghrQ
+pepsi_mirinda_2l,Mirinda,2.25L,mirinda_group,720,60,https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSpbNoXB-z1_65ITFkIH7LMfIjd68NCFAj4O74MY8o_G_tD-KwEITC6HFJP0vIHPD-S-8Kz-jXXxW3zD1QdGrUSHewzvFxXMgLyELKI0e-iQ46pesuycPghrQ
+pepsi_slice_200ml,Slice,200ml,slice_group,240,20,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg
+pepsi_slice_500ml,Slice,500ml,slice_group,480,40,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg
+pepsi_slice_1l,Slice,1L,slice_group,600,50,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg
+pepsi_slice_2l,Slice,2.25L,slice_group,720,60,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg
