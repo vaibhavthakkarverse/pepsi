@@ -1,21 +1,89 @@
 id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
-pepsi_200ml,Pepsi,200ml,pepsi_group,240,20,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
-pepsi_500ml,Pepsi,500ml,pepsi_group,480,40,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
-pepsi_1l,Pepsi,1L,pepsi_group,600,50,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
-pepsi_2l,Pepsi,2.25L,pepsi_group,720,60,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
-pepsi_mountaindew_200ml,Mountain Dew,200ml,mountaindew_group,240,20,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
-mountaindew_500ml,Mountain Dew,500ml,mountaindew_group,480,40,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
-mountaindew_1l,Mountain Dew,1L,mountaindew_group,600,50,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
-pepsi_mountaindew_2l,Mountain Dew,2.25L,mountaindew_group,720,60,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
-pepsi_7up_200ml,7UP,200ml,7up_group,240,20,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
-pepsi_7up_500ml,7UP,500ml,7up_group,480,40,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
-pepsi_7up_1l,7UP,1L,7up_group,600,50,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
-pepsi_7up_2l,7UP,2.25L,7up_group,720,60,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
-pepsi_mirinda_200ml,Mirinda,200ml,mirinda_group,240,20,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
-pepsi_mirinda_500ml,Mirinda,500ml,mirinda_group,480,40,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,9
-pepsi_mirinda_1l,Mirinda,1L,mirinda_group,600,50,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
-pepsi_mirinda_2l,Mirinda,2.25L,mirinda_group,720,60,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
-pepsi_slice_200ml,Slice,200ml,slice_group,240,20,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
-pepsi_slice_500ml,Slice,500ml,slice_group,480,40,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,9
-pepsi_slice_1l,Slice,1L,slice_group,600,50,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
-pepsi_slice_2l,Slice,2.25L,slice_group,720,60,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
+1,LEHAR SODA,GLASS 300ML MRP.10,SODA14,240,10,,12
+2,7UP FIZZ,PET 1 LTR Rs.50,7UP9,705,47,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
+3,7UP FIZZ,PET 600ML RS.40,7UP9,900,37.5,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
+4,7UP FIZZ,PET 2.25L Rs.100,7UP9,831,92.3333,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
+5,7UP FIZZ,GLASS 200ML Rs.10,7UP9,216,9,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
+6,7UP FIZZ,CAN 300ML Rs.60,CAN6,850,35.4167,,12
+7,7UP ZERO,PET 400ML Rs.20,7UP9,550,18.3333,https://5.imimg.com/data5/XS/DV/FJ/SELLER-79728908/7up-regular-koobys-png.png,12
+8,NIMBOOZ,TETRA 125ML Rs.10,NIMBOOZ12,360,9,,12
+9,AQUAFINA,PET 1 LTR RS.20,AQUAFINA13,145,12.0833,,12
+10,AQUAFINA,PET 500ML RS.10,AQUAFINA13,193,8.0417,,12
+11,NIMOOZ BIG,PET 500ML Rs30,NIMBOOZ12,670,27.9167,,12
+12,MOUNTAIN DEW,GLASS 200ML Rs.10,DEW10,216,9,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+13,MOUNTAIN DEW,PET 2.25 LTR Rs.100,DEW10,705,78.3333,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+14,LEHAR SODA,PET 250ML RS.10,SODA14,263,8.7667,,12
+15,LEHAR SODA,PET 750ML RS.20,SODA14,430,17.9167,,12
+16,GATORAT BLUE,PET 250ML RS.20,GATORAT7,440,18.3333,,12
+17,GATORAT LEMON,PET 250ML RS.20,GATORAT7,440,18.3333,,12
+18,GATORAT ORANGE,PET 250ML RS.20,GATORAT7,440,18.3333,,12
+19,GATORAT BLUE,PET 500ML RS.50,GATORAT7,1116,46.5,,12
+20,GATORAT LEMON,PET 500ML RS.50,GATORAT7,1116,46.5,,12
+21,GATORAT ORANGE,PET 500ML RS.50,GATORAT7,1116,46.5,,12
+22,MOUNTAIN DEW,PET 1 LTR Rs.50,DEW10,705,47,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+23,MOUNTAIN DEW,PET 250ML Rs.20,DEW10,550,18.3333,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+24,MOUNTAIN DEW ICE,PET 250ML Rs.20,DEW10,537.5,17.9167,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+25,MIRINDA ORANGE,PET 1 LTR Rs.50,MIRINDA4,705,47,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
+26,MIRINDA ORANGE,PET 2.25 LTR Rs.100,MIRINDA4,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
+27,MIRINDA ORANGE,GLASS 200ML RS.10,MIRINDA4,216,9,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
+28,MIRINDA ORANGE,PET 250ML Rs.20,MIRINDA4,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
+29,MIRINDA ORANGE,CAN 300ML Rs.60,CAN6,850,35.4167,,12
+30,BUTTERSCOTCH MILK,PET 180ML Rs.35,MILK1,670,27.9167,,12
+31,CHOCOLATE MILK,PET 180ML Rs.35,MILK1,790,32.9167,,12
+32,COFFEE MILK,PET 180ML Rs.35,MILK1,790,32.9167,,12
+33,ELAICHI MILK,PET 180ML Rs.30,MILK1,672,28,,12
+34,KESAR BADAM MILK,PET 180ML Rs.30,MILK1,670,27.9167,,12
+35,MANGO MILK,PET 180ML Rs.35,MILK1,670,27.9167,,12
+36,ROSE MILK,PET 180ML Rs.30,MILK1,440,18.3333,,12
+37,VANILA MILK,PET 180ML Rs.30,MILK1,670,27.9167,,12
+38,MIRINDA ORANGE,PET 600ML Rs.40,MIRINDA4,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
+39,MOUNTAIN DEW,CAN 300ML Rs.60,CAN6,850,35.4167,,12
+40,MOUNTAIN DEW,PET 600ML RS.40,DEW10,900,37.5,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+41,NIMBOOZ,PET 350ML RS.25,NIMBOOZ12,625,20.8333,https://images-cdn.ubuy.co.in/67239fabd09d206802478eb7-mountain-dew-citrus-soda-pop-1-25-liter.jpg,12
+42,NIMOOZ,PET 345ML Rs.20,NIMBOOZ12,550,18.3333,,12
+43,PEPSI DIT,CAN 300ML Rs.30,CAN6,540,22.5,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+44,PEPSI,PET 2.25 LTR Rs.100,PEPSI11,840,93.3333,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+45,PEPSI,GLASS 200ML Rs.10,PEPSI11,216,9,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+46,PEPSI,PET 400ML Rs.20,PEPSI11,550,18.3333,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+47,PEPSI BLACK,CAN 330ML Rs.40,CAN6,900,37.5,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+48,PEPSI BLACK,PET 400ML Rs.20,PEPSI11,550,18.3333,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+49,PEPSI BLACK,PET 500ML Rs.20,PEPSI11,430,17.9167,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+50,PEPSI COLA,PET 1 LTR Rs.50,PEPSI11,705,47,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+51,PEPSI,CAN 300ML Rs.60,CAN6,850,35.4167,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+52,PEPSI,PET 600ML RS.40,PEPSI11,900,37.5,https://as2.ftcdn.net/v2/jpg/03/11/32/15/1000_F_311321530_e0FtATHGjzszQmvT2RB5CFYWbpjshEaC.jpg,12
+53,SLICE,GLASS 200ML Rs.10,SLICE5,216,9,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
+54,SLICE,PET 600ML Rs.42,SLICE5,948,39.5,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
+55,SLICE,TETRA 125ML Rs.10,SLICE5,360,9,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
+56,STING BLUE,PET 250ML RS.20,STING8,550,18.3333,,12
+57,STING RED,PET 250ML Rs.20,STING8,550,18.3333,,12
+58,STING GOLD,PET 250ML Rs.20,STING8,550,18.3333,,12
+59,APPLE TROP,TETRA 1LIT Rs.113,TROP 1 LTR16,1111,92.5833,,12
+60,APPLE TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+61,CRANBERRY TROP,TETRA 1LIT Rs.150,TROP 1 LTR16,1490,124.1667,,12
+62,TROP FRUT LITCHI LOVE,TETRA 125ML 40 Rs.10,125ML15,360,9,,12
+63,TROP FRUTZ APPLETINI,TETRA 125ML 40 Rs.10,125ML15,360,9,,12
+64,TROP FRUTZ MIX MAGIC,TETRA 125ML 40 Rs.10,125ML15,360,9,,12
+65,GUAVA TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+66,APPLE TROP,PET 180ML RS.20,TROP PET3,550,18.3333,,12
+67,GUAVA TROP,PET 180ML RS.20,TROP PET3,550,18.3333,,12
+68,LYCHEE TROP,TETRA 180ML Rs.20,TETRA2,490,16.3333,,12
+69,LYCHEE TROP,TETRA 1LIT Rs.123,TROP 1 LTR16,1320,110,,12
+70,MANGO TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+71,LYCHEE TROP,PET 180ML Rs.20,TROP PET3,550,18.3333,,12
+72,MIX FRUT TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+73,MIX FUIT TROP,TETRA 1LIT Rs.125,TROP 1 LTR16,1333,111.0833,,12
+74,ORANGE TROP,TETRA 1LIT 100% Rs.140,TROP 1 LTR16,1486,123.8333,,12
+75,MIX FRUT TROP,PET 180ML RS.20,TROP PET3,550,18.3333,,12
+76,GUAVA TROP,TETRA 1LIT Rs.120,TROP 1 LTR16,1263.16,105.2633,,12
+77,ORANGE TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+78,ORANGE TROP,PET 180ML RS.20,TROP PET3,550,18.3333,,12
+79,ORANGE TROP,TETRA 1LIT Rs.165,TROP 1 LTR16,1634,136.1667,,12
+80,PINEAPPLE TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+81,PINEA TROP,TETRA 1LIT Rs.125,TROP 1 LTR16,1333,111.0833,,12
+82,POMEGRANATE TROP,TETRA 180ML RS.20,TETRA2,490,16.3333,,12
+83,POMEGRANATE TROP,PET 180ML RS.20,TROP PET3,550,18.3333,,12
+84,POMEGR TROP,TETRA 1LIT Rs.115,TROP 1 LTR16,1222,101.8333,,12
+85,STING RED,GLAAS 200ML RS.12,STING8,240,10,,12
+86,STING RED,CAN 250ML Rs.35,CAN6,780,32.5,,12
+87,SLICE,PET 200ML RS.20,SLICE5,440,18.3333,https://m.media-amazon.com/images/I/61Q2iLCxQFL.jpg,12
+88,MANGO TROP,TETRA 1 LRT RS.120,TROP 1 LTR16,1263.16,105.2633,,12
