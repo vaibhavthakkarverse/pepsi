@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Order</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        }
+
+        .product-group { 
+            margin-bottom: 30px; 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 8px; 
+            position: relative;
+            background-color: #f8f9fa;
+        }
+
+        .product-group::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .group-header { 
+            font-size: 1.6em; 
+            margin-bottom: 20px; 
+            color: #000; 
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+        }
+
+        .group-content { 
+            display: flex; 
+            gap: 20px; 
+            align-items: flex-start; 
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .group-image-container { 
+            flex-shrink: 0; 
+            width: 150px; 
+        }
+
+        .group-image { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+        }
+
+        .product-list { 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px;
+            position: relative;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 300px;
+            padding: 10px;
+        }
+
+        .product-list::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(255,255,255,0.95) 20%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.95) 80%);
+            z-index: 0;
+        }
+
+        .product-row { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            width: 100%; 
+            padding: 8px 0;
+            margin-bottom: 4px;
+        }
+
+        .product-row:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .product-row > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-size { 
+            min-width: 120px; 
+        }
+
+        .product-size label {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .product-inputs { 
+            display: flex; 
+            gap: 20px; 
+            flex-wrap: nowrap; 
+        }
+
+        .input-group { 
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+        }
+
+        .input-group label {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .price-info { 
+            color: #333; 
+            font-size: 0.8em; 
+            font-weight: 500;
+        }
+
+        .button-container { 
+            margin-top: 20px; 
+        }
+
+        button { 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        button:hover { 
+            background-color: #0056b3; 
+        }
+
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); 
+            gap: 25px; 
+        }
+
+        .error-message { 
+            color: red; 
+            margin: 20px 0; 
+        }
+
+        input[type="number"] { 
+            width: 40px; 
+            padding: 2px; 
+            font-size: 0.9em; 
+            height: 20px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        .checkbox-container label {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #000;
+        }
+
+        @media (max-width: 600px) {
+            .group-content {                
+                align-items: center;
+            }
+            .group-image-container { 
+                width: 80px; 
+            }
+            .product-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .product-row { 
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+            .product-inputs { 
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>NITA SALES NADIAD</h2>
+    <h3>Select  Products</h3>
+    <div id="error" class="error-message"></div>
+    <div id="products" class="product-grid">
+    </div>
+    <div class="button-container">
+        <button onclick="sendOrder()">Submit Order</button>
+    </div>
+    <script>
+        let products = [];
+        let productGroups = {};
+
+        async function loadProducts() {
+            try {
+                const response = await fetch('https://vaibhavthakkarverse.github.io/pepsi/products.csv');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const csvText = await response.text();
+                const rows = csvText.split('\n').slice(1);
+                
+                products = rows
+                    .filter(row => row.trim())
+                    .map(row => {
+                        const [id, name, size, group_id, box_price, piece_price, image_url, fixed_loose_qty, display_name] = row.split(',').map(field => field.trim());
+                        return {
+                            id,
+                            name,
+                            size,
+                            group_id,
+                            box_price: parseInt(box_price),
+                            piece_price: parseInt(piece_price),
+                            image_url,
+                            fixed_loose_qty: parseInt(fixed_loose_qty),
+                            display_name: display_name || group_id
+                        };
+                    });
+
+                if (products.length === 0) {
+                    throw new Error('No products found in the CSV file');
+                }
+
+                products.forEach(product => {
+                    if (!productGroups[product.group_id]) {
+                        productGroups[product.group_id] = {
+                            name: product.display_name || product.name,
+                            products: [],
+                            image_url: product.image_url
+                        };
+                    }
+                    productGroups[product.group_id].products.push(product);
+                });
+
+                renderProducts();
+            } catch (error) {
+                console.error('Error loading products:', error);
+                document.getElementById('error').innerHTML = `
+                    Error loading products: ${error.message}<br>
+                    Please make sure products.csv is in the same directory as this HTML file.
+                `;
+            }
+        }
+
+        function renderProducts() {
+            const productsContainer = document.getElementById('products');
+            productsContainer.innerHTML = '';
+
+            Object.entries(productGroups).forEach(([group_id, group]) => {
+                const groupElement = document.createElement('div');
+                groupElement.className = 'product-group';
+                
+                const groupHeader = document.createElement('div');
+                groupHeader.className = 'group-header';
+                groupHeader.textContent = group.name;
+                groupElement.appendChild(groupHeader);
+
+                const groupContent = document.createElement('div');
+                groupContent.className = 'group-content';
+
+                const productList = document.createElement('div');
+                productList.className = 'product-list';
+                if (group.image_url) {
+                    productList.style.backgroundImage = `url('${group.image_url}')`;
+                }
+
+                group.products.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.className = 'product-row';
+                    productElement.innerHTML = `
+                        <div class="product-size">
+                            <label>${product.name} - ${product.size}</label>
+                        </div>
+                        <div class="product-size">
+                            <span class="price-info">(₹${product.box_price}/box, ₹${product.piece_price}/piece)</span>
+                        </div>
+                        <div class="product-inputs">
+                            <div class="input-group">
+                                <label>Box:</label>
+                                <input type="number" min="0" value="0" id="${product.id}_box">
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="${product.id}_loose" data-fixed-qty="${product.fixed_loose_qty}">
+                                <label>Loose (${product.fixed_loose_qty})</label>
+                            </div>
+                        </div>
+                    `;
+                    productList.appendChild(productElement);
+                });
+
+                groupContent.appendChild(productList);
+                groupElement.appendChild(groupContent);
+                productsContainer.appendChild(groupElement);
+            });
+        }
+
+        function calculateTotal(product, boxQty, looseQty) {
+            return (boxQty * product.box_price) + (looseQty * product.piece_price);
+        }
+
+        function sendOrder() {
+            let orderText = "Pepsi Order:\n";
+            let totalAmount = 0;
+
+            products.forEach(product => {
+                const boxQty = parseInt(document.getElementById(`${product.id}_box`).value) || 0;
+                const looseCheckbox = document.getElementById(`${product.id}_loose`);
+                const looseQty = looseCheckbox.checked ? product.fixed_loose_qty : 0;
+
+                if (boxQty > 0 || looseQty > 0) {
+                    const productTotal = calculateTotal(product, boxQty, looseQty);
+                    orderText += `${product.name} ${product.size}:`;
+                    if (boxQty > 0) orderText += `\n- Boxes: ${boxQty}`;
+                    if (looseQty > 0) orderText += `\n- Loose: ${looseQty}`;
+                    orderText += `\n- Amount: ₹${productTotal}\n\n`;
+                    totalAmount += productTotal;
+                }
+            });
+
+            if (totalAmount === 0) {
+                alert("Please select at least one product.");
+                return;
+            }
+
+            orderText += `Total Amount: ₹${totalAmount}`;
+            let whatsappUrl = `https://wa.me/919998984223?text=${encodeURIComponent(orderText)}`;
+            window.open(whatsappUrl, "_blank");
+        }
+
+        loadProducts();
+    </script>
+</body>
+</html>
