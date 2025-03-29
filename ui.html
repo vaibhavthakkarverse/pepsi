@@ -199,7 +199,7 @@
                             <p>No. of boxes</p>
                             <div class="num_input">
                                 <button type="button" onclick="changeQuantity(this, -1)">-</button>
-                                <input type="number" name="quantity" value="0" min="0" max="100" id="${product.id}_box">
+                                <input type="number" name="quantity" value="0" min="0" max="1000" id="${product.id}_box" onchange="validateQuantity(this)">
                                 <button type="button" onclick="changeQuantity(this, 1)">+</button>
                             </div>
                         </div>
@@ -230,10 +230,18 @@
             const input = button.parentElement.querySelector('input');
             const currentValue = parseInt(input.value) || 0;
             const newValue = currentValue + change;
-            if (newValue >= 0) {
+            if (newValue >= 0 && newValue <= 1000) {
                 input.value = newValue;
                 updateSubmitButton();
             }
+        }
+
+        function validateQuantity(input) {
+            let value = parseInt(input.value) || 0;
+            if (value < 0) value = 0;
+            if (value > 1000) value = 1000;
+            input.value = value;
+            updateSubmitButton();
         }
 
         function updateSubmitButton() {
