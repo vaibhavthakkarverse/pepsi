@@ -298,6 +298,39 @@
             slider.style.transform = `translateX(-${index * 100}%)`;
         }
 
+        function calculateTotal(product, boxQty, looseQty) {
+            return (boxQty * product.box_price) + (looseQty * product.piece_price);
+        }
+
+        function sendOrder() {
+            let orderText = "Pepsi Order:\n";
+            let totalAmount = 0;
+
+            products.forEach(product => {
+                const boxQty = parseInt(document.getElementById(`${product.id}_box`).value) || 0;
+                const looseCheckbox = document.getElementById(`${product.id}_loose`);
+                const looseQty = looseCheckbox.checked ? product.fixed_loose_qty : 0;
+
+                if (boxQty > 0 || looseQty > 0) {
+                    const productTotal = calculateTotal(product, boxQty, looseQty);
+                    orderText += `${product.name} ${product.size}:`;
+                    if (boxQty > 0) orderText += `\n- Boxes: ${boxQty}`;
+                    if (looseQty > 0) orderText += `\n- Loose: ${looseQty}`;
+                    orderText += `\n- Amount: ₹${productTotal}\n\n`;
+                    totalAmount += productTotal;
+                }
+            });
+
+            if (totalAmount === 0) {
+                alert("Please select at least one product.");
+                return;
+            }
+
+            orderText += `Total Amount: ₹${totalAmount}`;
+            let whatsappUrl = `https://wa.me/919998984223?text=${encodeURIComponent(orderText)}`;
+            window.open(whatsappUrl, "_blank");
+        }
+
         // Load products when page loads
         document.addEventListener('DOMContentLoaded', loadProducts);
     </script>
