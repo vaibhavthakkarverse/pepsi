@@ -1,5 +1,5 @@
 id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
-1,LEHAR SODA,GLASS 300ML MRP.10,LEHAR SODA,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12
+1,LEHAR SODA,GLASS 300ML MRP.10,LEHAR SODA,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/lehar-glass-300ml.jpg,12
 2,7UP FIZZ,PET 1 LTR Rs.50,7UP FIZZ,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
 3,7UP FIZZ,PET 600ML RS.40,7UP FIZZ,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
 4,7UP FIZZ,PET 2.25L Rs.100,7UP FIZZ,831,92.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
