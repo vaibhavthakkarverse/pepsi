@@ -248,6 +248,13 @@
             }
         }
 
+        // Add event listener for checkbox changes
+        document.addEventListener('change', function(e) {
+            if (e.target.type === 'checkbox') {
+                updateSubmitButton();
+            }
+        });
+
         function initializeSlider() {
             const sliders = document.querySelectorAll('.slider');
             sliders.forEach((slider, sliderIndex) => {
