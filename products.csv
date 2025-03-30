@@ -4,7 +4,7 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
 3,7UP FIZZ,PET 600ML RS.40,7UP FIZZ,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
 4,7UP FIZZ,PET 2.25L Rs.100,7UP FIZZ,831,92.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
 5,7UP FIZZ,GLASS 200ML Rs.10,7UP FIZZ,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-6,7UP FIZZ,CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+6,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 7,7UP ZERO,PET 400ML Rs.20,7UP FIZZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
 8,NIMBOOZ,TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
 9,AQUAFINA,PET 1 LTR RS.20,AQUAFINA,145,12.0833,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12
@@ -27,7 +27,7 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
 26,MIRINDA ORANGE,PET 2.25 LTR Rs.100,MIRINDA,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
 27,MIRINDA ORANGE,GLASS 200ML RS.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
 28,MIRINDA ORANGE,PET 250ML Rs.20,MIRINDA,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
-29,MIRINDA ORANGE,CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+29,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 30,BUTTERSCOTCH MILK,PET 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
 31,CHOCOLATE MILK,PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
 32,COFFEE MILK,PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
@@ -37,19 +37,19 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
 36,ROSE MILK,PET 180ML Rs.30,MILK 180ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
 37,VANILA MILK,PET 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
 38,MIRINDA ORANGE,PET 600ML Rs.40,MIRINDA,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
-39,MOUNTAIN DEW,CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+39,MOUNTAIN DEW,39,MOUNTAIN DEW CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 40,MOUNTAIN DEW,PET 600ML RS.40,MOUNTAIN DEW,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
 41,NIMBOOZ,PET 350ML RS.25,NIMBOOZ,625,20.8333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
 42,NIMOOZ,PET 345ML Rs.20,NIMBOOZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-43,PEPSI DIT,CAN 300ML Rs.30,CAN 300ML,540,22.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+43,PEPSI DIT,43,PEPSI DIT CAN 300ML Rs.30,CAN 300ML,540,22.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 44,PEPSI,PET 2.25 LTR Rs.100,PEPSI,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 45,PEPSI,GLASS 200ML Rs.10,PEPSI,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 46,PEPSI,PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-47,PEPSI BLACK,CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+47,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 48,PEPSI BLACK,PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 49,PEPSI BLACK,PET 500ML Rs.20,PEPSI,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 50,PEPSI COLA,PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-51,PEPSI,CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+51,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 52,PEPSI,PET 600ML RS.40,PEPSI,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 53,SLICE,GLASS 200ML Rs.10,SLICE,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
 54,SLICE,PET 600ML Rs.42,SLICE,948,39.5,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
@@ -84,6 +84,6 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
 83,POMEGRANATE TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
 84,POMEGR TROP,TETRA 1LIT Rs.115,TROPICANA 1LTR,1222,101.8333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
 85,STING RED,GLAAS 200ML RS.12,STING,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12
-86,STING RED,CAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+86,STING RED,STING REDCAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 87,SLICE,PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
 88,MANGO TROP,TETRA 1 LRT RS.120,TROPICANA 1LTR,1263.16,105.2633,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
