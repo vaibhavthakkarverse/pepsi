@@ -21,15 +21,15 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 20,PEPSI BLACK,PEPSI BLACK PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI BLACK
 21,PEPSI BLACK,PEPSI BLACK PET 500ML Rs.20,PEPSI,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI BLACK
 22,PEPSI COLA,PEPSI PET 1 LTR Rs.50 ,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI COLA
-23,MIRINDA,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
-24,MIRINDA,MIRINDA PET 600ML RS.40,MIRINDA,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
-25,MIRINDA,MIRINDA PET 2.25L Rs.100,MIRINDA,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
-26,MIRINDA,MIRINDA GLASS 200ML Rs.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
-27,MIRINDA,MIRINDA ZERO - PET 400ML Rs.20,MIRINDA,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
-28,MIRINDA ORANGE,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
-29,MIRINDA ORANGE,MIRINDA PET 2.25 LTR Rs.100,MIRINDA,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
-30,MIRINDA ORANGE,MIRINDA GLASS 200ML RS.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
-31,MIRINDA ORANGE,MIRINDA PET 250ML Rs.20,MIRINDA,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+23,MIRINDA,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,12,MIRINDA
+24,MIRINDA,MIRINDA PET 600ML RS.40,MIRINDA,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,12,MIRINDA
+25,MIRINDA,MIRINDA PET 2.25L Rs.100,MIRINDA,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,12,MIRINDA
+26,MIRINDA,MIRINDA GLASS 200ML Rs.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,12,MIRINDA
+27,MIRINDA,MIRINDA ZERO - PET 400ML Rs.20,MIRINDA,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,12,MIRINDA
+28,MIRINDA ORANGE,MIRINDA ORANGE PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+29,MIRINDA ORANGE,MIRINDA ORANGE PET 2.25 LTR Rs.100,MIRINDA,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+30,MIRINDA ORANGE,MIRINDA ORANGE GLASS 200ML RS.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+31,MIRINDA ORANGE,MIRINDA ORANGE PET 250ML Rs.20,MIRINDA,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
 32,SLICE,SLICE PET 1 LTR Rs.50,SLICE,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
 33,SLICE,SLICE PET 600ML RS.40,SLICE,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
 34,SLICE,SLICE PET 2.25L Rs.100,SLICE,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
