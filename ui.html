@@ -36,7 +36,7 @@
         /***** items *****/
         .item_warp{padding-top:60px;}
         .item_warp .item{padding:0 20px 20px 20px;}
-        .item_warp .item hgroup{border-bottom:1px solid #cdcdcd;padding:10px;margin:10px 0;}
+        .item_warp .item hgroup{padding:5px;margin:5px 0;}
         .item_warp .item hgroup h2{font-weight:700;font-size:20px;text-transform:uppercase;padding-bottom:5px;position:relative;}
         .item_warp .item hgroup h2 span{padding:2px;background:#f8e2a0;position:absolute;top:3px;right:0;font-size:12px;font-weight:600;}
         .item_warp .item hgroup h2 span em{font-size:12px;}
@@ -105,6 +105,13 @@
                             fixed_loose_qty: parseInt(fixed_loose_qty),
                             display_name: display_name || group_id
                         };
+                    })
+                    .sort((a, b) => {
+                        // First sort by group_id
+                        const groupCompare = a.group_id.localeCompare(b.group_id);
+                        if (groupCompare !== 0) return groupCompare;
+                        // If same group, sort by size
+                        return a.size.localeCompare(b.size);
                     });
 
                 if (products.length === 0) {
@@ -147,10 +154,7 @@
                 const headerGroup = document.createElement('hgroup');
                 headerGroup.innerHTML = `
                     <h2>${group.name}</h2>
-                    <ul class="clearfix">
-                        <li class="avl">Available on:</li>
-                        ${group.products.map(p => `<li>${p.size}</li>`).join('')}
-                    </ul>
+                   
                 `;
                 itemElement.appendChild(headerGroup);
 
