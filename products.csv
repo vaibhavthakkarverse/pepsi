@@ -41,7 +41,7 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
 40,MOUNTAIN DEW,PET 600ML RS.40,MOUNTAIN DEW,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
 41,NIMBOOZ,PET 350ML RS.25,NIMBOOZ,625,20.8333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
 42,NIMOOZ,PET 345ML Rs.20,NIMBOOZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-43,PEPSI DIT,43,PEPSI DIT CAN 300ML Rs.30,CAN 300ML,540,22.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
+43,PEPSI DIT,PEPSI DIT CAN 300ML Rs.30,CAN 300ML,540,22.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
 44,PEPSI,PET 2.25 LTR Rs.100,PEPSI,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 45,PEPSI,GLASS 200ML Rs.10,PEPSI,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
 46,PEPSI,PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
