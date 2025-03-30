@@ -40,11 +40,11 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 39,SLICE,SLICE PET 600ML Rs.42,SLICE,948,39.5,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
 40,SLICE,SLICE TETRA 125ML Rs.10,SLICE,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
 41,SLICE,SLICE PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
-42,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,7UP FIZZ
-43,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,PEPSI
-44,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,MIRINDA ORANGE
-45,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,PEPSI BLACK
-46,STING RED,STING RED CAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,STING RED
+42,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,CAN 300ML
+43,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,CAN 300ML
+44,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,CAN 300ML
+45,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,CAN 300ML
+46,STING RED,STING RED CAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,CAN 300ML
 47,NIMBOOZ,NIMBOOZ TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12,NIMBOOZ
 48,NIMOOZ BIG,NIMBOOZ PET 500ML Rs30,NIMBOOZ,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12,NIMBOOZ
 49,AQUAFINA,AQUAFINA PET 1 LTR RS.20,AQUAFINA,145,12.0833,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12,AQUAFINA
