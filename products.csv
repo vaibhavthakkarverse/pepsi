@@ -1,89 +1,89 @@
-id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty
-1,LEHAR SODA,GLASS 300ML MRP.10,LEHAR SODA,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/lehar-glass-300ml.jpg,12
-2,7UP FIZZ,PET 1 LTR Rs.50,7UP FIZZ,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-3,7UP FIZZ,PET 600ML RS.40,7UP FIZZ,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-4,7UP FIZZ,PET 2.25L Rs.100,7UP FIZZ,831,92.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-5,7UP FIZZ,GLASS 200ML Rs.10,7UP FIZZ,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-6,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-7,7UP ZERO,PET 400ML Rs.20,7UP FIZZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12
-8,NIMBOOZ,TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-9,AQUAFINA,PET 1 LTR RS.20,AQUAFINA,145,12.0833,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12
-10,AQUAFINA,PET 500ML RS.10,AQUAFINA,193,8.0417,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12
-11,NIMOOZ BIG,PET 500ML Rs30,NIMBOOZ,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-12,MOUNTAIN DEW,GLASS 200ML Rs.10,MOUNTAIN DEW,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-13,MOUNTAIN DEW,PET 2.25 LTR Rs.100,MOUNTAIN DEW,705,78.3333,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-14,LEHAR SODA,PET 250ML RS.10,LEHAR SODA,263,8.7667,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12
-15,LEHAR SODA,PET 750ML RS.20,LEHAR SODA,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12
-16,GATORAT BLUE,PET 250ML RS.20,GATORAT 250ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-17,GATORAT LEMON,PET 250ML RS.20,GATORAT 250ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-18,GATORAT ORANGE,PET 250ML RS.20,GATORAT 250ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-19,GATORAT BLUE,PET 500ML RS.50,GATORAT 250ML,1116,46.5,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-20,GATORAT LEMON,PET 500ML RS.50,GATORAT 250ML,1116,46.5,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-21,GATORAT ORANGE,PET 500ML RS.50,GATORAT 250ML,1116,46.5,https://vaibhavthakkarverse.github.io/pepsi/images/gatorade-blue.webp,12
-22,MOUNTAIN DEW,PET 1 LTR Rs.50,MOUNTAIN DEW,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-23,MOUNTAIN DEW,PET 250ML Rs.20,MOUNTAIN DEW,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-24,MOUNTAIN DEW ICE,PET 250ML Rs.20,MOUNTAIN DEW,537.5,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-25,MIRINDA ORANGE,PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
-26,MIRINDA ORANGE,PET 2.25 LTR Rs.100,MIRINDA,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
-27,MIRINDA ORANGE,GLASS 200ML RS.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
-28,MIRINDA ORANGE,PET 250ML Rs.20,MIRINDA,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12
-29,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-30,BUTTERSCOTCH MILK,PET 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-31,CHOCOLATE MILK,PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-32,COFFEE MILK,PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-33,ELAICHI MILK,PET 180ML Rs.30,MILK 180ML,672,28,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-34,KESAR BADAM MILK,PET 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-35,MANGO MILK,PET 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-36,ROSE MILK,PET 180ML Rs.30,MILK 180ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-37,VANILA MILK,PET 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12
-38,MIRINDA ORANGE,PET 600ML Rs.40,MIRINDA,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/mirinda.webp,12
-39,MOUNTAIN DEW,MOUNTAIN DEW CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-40,MOUNTAIN DEW,PET 600ML RS.40,MOUNTAIN DEW,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12
-41,NIMBOOZ,PET 350ML RS.25,NIMBOOZ,625,20.8333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-42,NIMOOZ,PET 345ML Rs.20,NIMBOOZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12
-43,PEPSI DIT,PEPSI DIT CAN 300ML Rs.30,CAN 300ML,540,22.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-44,PEPSI,PET 2.25 LTR Rs.100,PEPSI,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-45,PEPSI,GLASS 200ML Rs.10,PEPSI,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-46,PEPSI,PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-47,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-48,PEPSI BLACK,PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-49,PEPSI BLACK,PET 500ML Rs.20,PEPSI,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-50,PEPSI COLA,PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-51,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-52,PEPSI,PET 600ML RS.40,PEPSI,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12
-53,SLICE,GLASS 200ML Rs.10,SLICE,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
-54,SLICE,PET 600ML Rs.42,SLICE,948,39.5,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
-55,SLICE,TETRA 125ML Rs.10,SLICE,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
-56,STING BLUE,PET 250ML RS.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12
-57,STING RED,PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12
-58,STING GOLD,PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12
-59,APPLE TROP,TETRA 1LIT Rs.113,TROPICANA 1LTR,1111,92.5833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-60,APPLE TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-61,CRANBERRY TROP,TETRA 1LIT Rs.150,TROPICANA 1LTR,1490,124.1667,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-62,TROP FRUT LITCHI LOVE,TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12
-63,TROP FRUTZ APPLETINI,TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12
-64,TROP FRUTZ MIX MAGIC,TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12
-65,GUAVA TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-66,APPLE TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-67,GUAVA TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-68,LYCHEE TROP,TETRA 180ML Rs.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-69,LYCHEE TROP,TETRA 1LIT Rs.123,TROPICANA 1LTR,1320,110,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-70,MANGO TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-71,LYCHEE TROP,PET 180ML Rs.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-72,MIX FRUT TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-73,MIX FUIT TROP,TETRA 1LIT Rs.125,TROPICANA 1LTR,1333,111.0833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-74,ORANGE TROP,TETRA 1LIT 100% Rs.140,TROPICANA 1LTR,1486,123.8333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-75,MIX FRUT TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-76,GUAVA TROP,TETRA 1LIT Rs.120,TROPICANA 1LTR,1263.16,105.2633,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-77,ORANGE TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-78,ORANGE TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-79,ORANGE TROP,TETRA 1LIT Rs.165,TROPICANA 1LTR,1634,136.1667,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-80,PINEAPPLE TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-81,PINEA TROP,TETRA 1LIT Rs.125,TROPICANA 1LTR,1333,111.0833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-82,POMEGRANATE TROP,TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-83,POMEGRANATE TROP,PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-84,POMEGR TROP,TETRA 1LIT Rs.115,TROPICANA 1LTR,1222,101.8333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
-85,STING RED,GLAAS 200ML RS.12,STING,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12
-86,STING RED,STING REDCAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12
-87,SLICE,PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12
-88,MANGO TROP,TETRA 1 LRT RS.120,TROPICANA 1LTR,1263.16,105.2633,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12
+id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_name
+1,LEHAR SODA,LEHAR GLASS 300ML MRP.10,LEHAR SODA,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12,LEHAR SODA
+2,LEHAR SODA,LEHAR PET 250ML RS.10,LEHAR SODA,263,8,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12,LEHAR SODA
+3,LEHAR SODA,LEHAR PET 750ML RS.20,LEHAR SODA,430,17,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12,LEHAR SODA
+4,7UP FIZZ,7UP PET 1 LTR Rs.50,7UP FIZZ,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+5,7UP FIZZ,7UP PET 600ML RS.40,7UP FIZZ,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+6,7UP FIZZ,7UP PET 2.25L Rs.100,7UP FIZZ,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+7,7UP FIZZ,7UP GLASS 200ML Rs.10,7UP FIZZ,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+8,7UP FIZZ,7UP ZERO - PET 400ML Rs.20,7UP FIZZ,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+9,7UP ZERO,7UP PET 400ML Rs.20,7UP FIZZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,12,7UP FIZZ
+10,MOUNTAIN DEW,MOUNTAIN DEW PET 1 LTR Rs.50,MOUNTAIN DEW,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mountain-dew.jpeg,12,MOUNTAIN DEW
+11,MOUNTAIN DEW,MOUNTAIN DEW PET 600ML RS.40,MOUNTAIN DEW,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/mountain-dew.jpeg,12,MOUNTAIN DEW
+12,MOUNTAIN DEW,MOUNTAIN DEW PET 2.25L Rs.100,MOUNTAIN DEW,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/mountain-dew.jpeg,12,MOUNTAIN DEW
+13,MOUNTAIN DEW,MOUNTAIN DEW GLASS 200ML Rs.10,MOUNTAIN DEW,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mountain-dew.jpeg,12,MOUNTAIN DEW
+14,MOUNTAIN DEW,MOUNTAIN DEW ZERO - PET 400ML Rs.20,MOUNTAIN DEW,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/mountain-dew.jpeg,12,MOUNTAIN DEW
+15,PEPSI,PEPSI PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI
+16,PEPSI,PEPSI PET 600ML RS.40,PEPSI,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI
+17,PEPSI,PEPSI PET 2.25L Rs.100,PEPSI,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI
+18,PEPSI,PEPSI GLASS 200ML Rs.10,PEPSI,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI
+19,PEPSI,PEPSI ZERO - PET 400ML Rs.20,PEPSI,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI
+20,PEPSI BLACK,PEPSI BLACK PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI BLACK
+21,PEPSI BLACK,PEPSI BLACK PET 500ML Rs.20,PEPSI,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI BLACK
+22,PEPSI COLA,PEPSI PET 1 LTR Rs.50 ,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,12,PEPSI COLA
+23,MIRINDA,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
+24,MIRINDA,MIRINDA PET 600ML RS.40,MIRINDA,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
+25,MIRINDA,MIRINDA PET 2.25L Rs.100,MIRINDA,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
+26,MIRINDA,MIRINDA GLASS 200ML Rs.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
+27,MIRINDA,MIRINDA ZERO - PET 400ML Rs.20,MIRINDA,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.jpeg,12,MIRINDA
+28,MIRINDA ORANGE,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+29,MIRINDA ORANGE,MIRINDA PET 2.25 LTR Rs.100,MIRINDA,840,93.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+30,MIRINDA ORANGE,MIRINDA GLASS 200ML RS.10,MIRINDA,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+31,MIRINDA ORANGE,MIRINDA PET 250ML Rs.20,MIRINDA,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda.webp,12,MIRINDA ORANGE
+32,SLICE,SLICE PET 1 LTR Rs.50,SLICE,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+33,SLICE,SLICE PET 600ML RS.40,SLICE,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+34,SLICE,SLICE PET 2.25L Rs.100,SLICE,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+35,SLICE,SLICE GLASS 200ML Rs.10,SLICE,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+36,SLICE,SLICE ZERO - PET 400ML Rs.20,SLICE,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+37,SLICE,SLICE PET 600ML Rs.42,SLICE,948,39.5,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+38,SLICE,SLICE TETRA 125ML Rs.10,SLICE,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+39,SLICE,SLICE PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+40,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,7UP FIZZ
+41,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,PEPSI
+42,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,MIRINDA ORANGE
+43,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,PEPSI BLACK
+44,STING RED,STING RED CAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/mix-cans.jpeg,12,STING RED
+45,NIMBOOZ,NIMBOOZ TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12,NIMBOOZ
+46,NIMOOZ BIG,NIMBOOZ PET 500ML Rs30,NIMBOOZ,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12,NIMBOOZ
+47,AQUAFINA,AQUAFINA PET 1 LTR RS.20,AQUAFINA,145,12.0833,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12,AQUAFINA
+48,AQUAFINA,AQUAFINA PET 500ML RS.10,AQUAFINA,193,8.0417,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,12,AQUAFINA
+49,MOUNTAIN DEW,MOUNTAIN DEW PET 250ML Rs.20,MOUNTAIN DEW,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12,MOUNTAIN DEW
+50,MOUNTAIN DEW,MOUNTAIN DEW PET 250ML Rs.20,MOUNTAIN DEW,537.5,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12,MOUNTAIN DEW
+51,BUTTERSCOTCH MILK,BUTTERSCOTCH MILK PET 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,BUTTERSCOTCH MILK
+52,CHOCOLATE MILK,CHOCOLATE MILK PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,CHOCOLATE MILK
+53,COFFEE MILK,COFFEE MILK PET 180ML Rs.35,MILK 180ML,790,32.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,COFFEE MILK
+54,ELAICHI MILK,ELAICHI MILK PET 180ML Rs.30,MILK 180ML,672,28,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,ELAICHI MILK
+55,KESAR BADAM MILK,KESAR BADAM MILK PET 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,KESAR BADAM MILK
+56,MANGO MILK,MANGO MILK PET 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MANGO MILK
+57,ROSE MILK,ROSE MILK PET 180ML Rs.30,MILK 180ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,ROSE MILK
+58,VANILA MILK,VANILA MILK PET 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,VANILA MILK
+59,STING BLUE,STING BLUE PET 250ML RS.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12,STING BLUE
+60,STING RED,STING RED PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12,STING RED
+61,STING GOLD,STING GOLD PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12,STING GOLD
+62,STING RED,STING RED GLAAS 200ML RS.12,STING,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,12,STING RED
+63,APPLE TROP,APPLE TROP TETRA 1LIT Rs.113,TROPICANA 1LTR,1111,92.5833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,APPLE TROP
+64,CRANBERRY TROP,CRANBERRY TROP TETRA 1LIT Rs.150,TROPICANA 1LTR,1490,124.1667,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,CRANBERRY TROP
+65,LYCHEE TROP,LYCHEE TROP TETRA 1LIT Rs.123,TROPICANA 1LTR,1320,110,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,LYCHEE TROP
+66,MIX FUIT TROP,MIX FUIT TROP TETRA 1LIT Rs.125,TROPICANA 1LTR,1333,111.0833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,MIX FUIT TROP
+67,ORANGE TROP,ORANGE TROP TETRA 1LIT 100% Rs.140,TROPICANA 1LTR,1486,123.8333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,ORANGE TROP
+68,GUAVA TROP,GUAVA TROP TETRA 1LIT Rs.120,TROPICANA 1LTR,1263.16,105.2633,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,GUAVA TROP
+69,ORANGE TROP,ORANGE TROP TETRA 1LIT Rs.165,TROPICANA 1LTR,1634,136.1667,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,ORANGE TROP
+70,PINEA TROP,PINEAPPLE TROP TETRA 1LIT Rs.125,TROPICANA 1LTR,1333,111.0833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,PINEA TROP
+71,POMEGR TROP,POMEGRANATE TROP TETRA 1LIT Rs.115,TROPICANA 1LTR,1222,101.8333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,POMEGR TROP
+72,MANGO TROP,MANGO TROP TETRA 1 LRT RS.120,TROPICANA 1LTR,1263.16,105.2633,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,MANGO TROP
+73,APPLE TROP,APPLE TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,APPLE TROP
+74,LYCHEE TROP,LYCHEE TROP TETRA 180ML Rs.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,LYCHEE TROP
+75,GUAVA TROP,GUAVA TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,GUAVA TROP
+76,MANGO TROP,MANGO TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,MANGO TROP
+77,MIX FRUT TROP,MIX FRUT TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,MIX FRUT TROP
+78,ORANGE TROP,ORANGE TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,ORANGE TROP
+79,PINEAPPLE TROP,PINEAPPLE TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,PINEAPPLE TROP
+80,POMEGRANATE TROP,POMEGRANATE TROP TETRA 180ML RS.20,TROPICANA TETRA 180ML,490,16.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,POMEGRANATE TROP
+81,TROP FRUT LITCHI LOVE,TROP FRUT LITCHI TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12,TROP FRUT LITCHI LOVE
+82,TROP FRUTZ APPLETINI,TROP FRUTZ APPLE TINI TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12,TROP FRUTZ APPLETINI
+83,TROP FRUTZ MIX MAGIC,TROP FRUTZ MIX MAGIC TETRA 125ML 40 Rs.10,TROPICANA TETRA 120ML,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-litchi.jpeg,12,TROP FRUTZ MIX MAGIC
+84,APPLE TROP,APPLE TROP PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,APPLE TROP
+85,GUAVA TROP,GUAVA TROP PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,GUAVA TROP
+86,MIX FRUT TROP,MIX FRUT TROP PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,MIX FRUT TROP
+87,ORANGE TROP,ORANGE TROP PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,ORANGE TROP
+88,POMEGRANATE TROP,POMEGRANATE TROP PET 180ML RS.20,TROPICANA PET 180ML,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,12,POMEGRANATE TROP
