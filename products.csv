@@ -2,12 +2,12 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 1,LEHAR SODA,LEHAR GLASS 300ML MRP.10,LEHAR SODA,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/lehar-glass-300ml.jpg,0,LEHAR SODA
 2,LEHAR SODA,LEHAR PET 250ML RS.10,LEHAR SODA,263,8,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,0,LEHAR SODA
 3,LEHAR SODA,LEHAR PET 750ML RS.20,LEHAR SODA,430,17,https://vaibhavthakkarverse.github.io/pepsi/images/Lehar.jpeg,12,LEHAR SODA
-4,7UP FIZZ,7UP PET 1 LTR Rs.50,7UP FIZZ,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,5,7UP FIZZ
+4,7UP FIZZ,7UP PET 1 LTR Rs.50,7UP FIZZ,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/7up-pet-1250ml.jpeg,5,7UP FIZZ
 5,7UP FIZZ,7UP PET 600ML RS.40,7UP FIZZ,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/7up-750-pet.jpeg,12,7UP FIZZ
-6,7UP FIZZ,7UP PET 2.25L Rs.100,7UP FIZZ,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,4,7UP FIZZ
-7,7UP FIZZ,7UP GLASS 200ML Rs.10,7UP FIZZ,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,0,7UP FIZZ
-8,7UP FIZZ,7UP ZERO - PET 400ML Rs.20,7UP FIZZ,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,15,7UP FIZZ
-9,7UP ZERO,7UP PET 400ML Rs.20,7UP FIZZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up.jpeg,15,7UP FIZZ
+6,7UP FIZZ,7UP PET 2.25L Rs.100,7UP FIZZ,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/7up-pet-2l.jpeg,4,7UP FIZZ
+7,7UP FIZZ,7UP GLASS 200ML Rs.10,7UP FIZZ,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/7up-glass-300ml.jpeg,0,7UP FIZZ
+8,7UP FIZZ,7UP ZERO - PET 400ML Rs.20,7UP FIZZ,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/7up-pet-250ml.jpeg,15,7UP FIZZ
+9,7UP ZERO,7UP PET 400ML Rs.20,7UP FIZZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/7up-zero-pet-medium.jpeg,15,7UP FIZZ
 10,MOUNTAIN DEW,MOUNTAIN DEW PET 1 LTR Rs.50,MOUNTAIN DEW,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,5,MOUNTAIN DEW
 11,MOUNTAIN DEW,MOUNTAIN DEW PET 600ML RS.40,MOUNTAIN DEW,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,12,MOUNTAIN DEW
 12,MOUNTAIN DEW,MOUNTAIN DEW PET 2.25L Rs.100,MOUNTAIN DEW,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,4,MOUNTAIN DEW
@@ -15,12 +15,12 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 14,MOUNTAIN DEW,MOUNTAIN DEW ZERO - PET 400ML Rs.20,MOUNTAIN DEW,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,15,MOUNTAIN DEW
 15,MOUNTAIN DEW,MOUNTAIN DEW PET 250ML Rs.20,MOUNTAIN DEW,537.5,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,15,MOUNTAIN DEW
 16,MOUNTAIN DEW,MOUNTAIN DEW PET 250ML Rs.20,MOUNTAIN DEW,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/dew.jpeg,15,MOUNTAIN DEW
-17,PEPSI,PEPSI PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,5,PEPSI
+17,PEPSI,PEPSI PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-pet-1250ml.jpeg,5,PEPSI
 18,PEPSI,PEPSI PET 600ML RS.40,PEPSI,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-pet.jpeg,12,PEPSI
-19,PEPSI,PEPSI PET 2.25L Rs.100,PEPSI,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,5,PEPSI
+19,PEPSI,PEPSI PET 2.25L Rs.100,PEPSI,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-pet-2l.jpeg,5,PEPSI
 20,PEPSI,PEPSI GLASS 200ML Rs.10,PEPSI,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-glass.jpeg,0,PEPSI
-21,PEPSI,PEPSI ZERO - PET 400ML Rs.20,PEPSI,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,15,PEPSI
-22,PEPSI BLACK,PEPSI BLACK PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,15,PEPSI BLACK
+21,PEPSI,PEPSI ZERO - PET 400ML Rs.20,PEPSI,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-zero-pet-400ml.jpeg,15,PEPSI
+22,PEPSI BLACK,PEPSI BLACK PET 400ML Rs.20,PEPSI,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-pet-400ml.jpeg,15,PEPSI BLACK
 23,PEPSI BLACK,PEPSI BLACK PET 500ML Rs.20,PEPSI,430,17.9167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,15,PEPSI BLACK
 24,PEPSI COLA,PEPSI PET 1 LTR Rs.50,PEPSI,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi.jpeg,5,PEPSI COLA
 25,MIRINDA,MIRINDA PET 1 LTR Rs.50,MIRINDA,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-simple.jpg,5,MIRINDA
@@ -35,20 +35,20 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 34,SLICE,SLICE PET 1 LTR Rs.50,SLICE,705,47,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,5,SLICE
 35,SLICE,SLICE PET 600ML RS.40,SLICE,900,37,https://vaibhavthakkarverse.github.io/pepsi/images/slice-pet.jpeg,12,SLICE
 36,SLICE,SLICE PET 2.25L Rs.100,SLICE,831,92,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,4,SLICE
-37,SLICE,SLICE GLASS 200ML Rs.10,SLICE,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,0,SLICE
-38,SLICE,SLICE PET  200ML Rs.20,SLICE,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,15,SLICE
+37,SLICE,SLICE GLASS 200ML Rs.10,SLICE,216,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice-glass-300ml.jpeg,0,SLICE
+38,SLICE,SLICE PET  200ML Rs.20,SLICE,550,18,https://vaibhavthakkarverse.github.io/pepsi/images/slice-pet-200ml.jpeg,15,SLICE
 39,SLICE,SLICE PET 600ML Rs.42,SLICE,948,39.5,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
-40,SLICE,SLICE TETRA 125ML Rs.10,SLICE,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
-41,SLICE,SLICE PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice.jpeg,12,SLICE
+40,SLICE,SLICE TETRA 125ML Rs.10,SLICE,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/slice-tetra-125ml.jpeg,12,SLICE
+41,SLICE,SLICE PET 200ML RS.20,SLICE,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/slice-pet-350ml.jpeg,12,SLICE
 42,7UP FIZZ,7UP CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/7up-can.jpg,12,CAN 300ML
-43,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-can.jpg,12,CAN 300ML
+43,PEPSI,PEPSI CAN 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-blue-can-300ml.jpeg,12,CAN 300ML
 44,MIRINDA ORANGE,MIRINDA 300ML Rs.60,CAN 300ML,850,35.4167,https://vaibhavthakkarverse.github.io/pepsi/images/mirinda-can.jpg,12,CAN 300ML
-45,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-black.jpg,12,CAN 300ML
+45,PEPSI BLACK,PEPSI BLACK CAN 330ML Rs.40,CAN 300ML,900,37.5,https://vaibhavthakkarverse.github.io/pepsi/images/pepsi-zero-can-300ml.jpeg,12,CAN 300ML
 46,STING RED,STING RED CAN 250ML Rs.35,CAN 300ML,780,32.5,https://vaibhavthakkarverse.github.io/pepsi/images/sting-red-can.webp,12,CAN 300ML
-47,NIMBOOZ,NIMBOOZ TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,0,NIMBOOZ
-48,NIMOOZ BIG,NIMBOOZ PET 500ML Rs30,NIMBOOZ,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,12,NIMBOOZ
-49,NIMBOOZ,NIMBOOZ PET 345ML Rs.20,NIMBOOZ,550,18.3333,,15,NIMBOOZ
-50,NIMBOOZ,NIMBOOZ PET 350ML Rs.25,NIMBOOZ,700,23.3333,,15,NIMBOOZ
+47,NIMBOOZ,NIMBOOZ TETRA 125ML Rs.10,NIMBOOZ,360,9,https://vaibhavthakkarverse.github.io/pepsi/images/nombooz-tetra-125ml.jpeg,0,NIMBOOZ
+48,NIMOOZ BIG,NIMBOOZ PET 500ML Rs30,NIMBOOZ,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz-pet-500ml.jpeg,12,NIMBOOZ
+49,NIMBOOZ,NIMBOOZ PET 345ML Rs.20,NIMBOOZ,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz.jpeg,15,NIMBOOZ
+50,NIMBOOZ,NIMBOOZ PET 350ML Rs.25,NIMBOOZ,700,23.3333,https://vaibhavthakkarverse.github.io/pepsi/images/nimbooz-pet-350ml.jpeg,15,NIMBOOZ
 51,AQUAFINA,AQUAFINA PET 1 LTR RS.20,AQUAFINA,145,12.0833,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,0,AQUAFINA
 52,AQUAFINA,AQUAFINA PET 500ML RS.10,AQUAFINA,193,8.0417,https://vaibhavthakkarverse.github.io/pepsi/images/aquafina.jpeg,0,AQUAFINA
 53,BUTTERSCOTCH MILK,BUTTERSCOTCH MILK 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MILK 180ML PET
@@ -58,9 +58,9 @@ id,name,size,group_id,box_price,piece_price,image_url,fixed_loose_qty,display_na
 57,KESAR BADAM MILK,KESAR BADAM MILK 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MILK 180ML PET
 58,MANGO MILK,MANGO MILK 180ML Rs.35,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MILK 180ML PET
 59,ROSE MILK,ROSE MILK 180ML Rs.30,MILK 180ML,440,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MILK 180ML PET
-60,VANILA MILK,VANILA MILK 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-butterscotch.webp,12,MILK 180ML PET
-61,STING BLUE,STING BLUE PET 250ML RS.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,0,STING
-62,STING RED,STING RED PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,0,STING
+60,VANILA MILK,VANILA MILK 180ML Rs.30,MILK 180ML,670,27.9167,https://vaibhavthakkarverse.github.io/pepsi/images/milk-all.jpeg,12,MILK 180ML PET
+61,STING BLUE,STING BLUE PET 250ML RS.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue-pet-small.jpeg,0,STING
+62,STING RED,STING RED PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-red-pet-small.jpeg,0,STING
 63,STING GOLD,STING GOLD PET 250ML Rs.20,STING,550,18.3333,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,0,STING
 64,STING RED,STING RED GLAAS 200ML RS.12,STING,240,10,https://vaibhavthakkarverse.github.io/pepsi/images/sting-blue.webp,0,STING
 65,APPLE TROP,APPLE TROP TETRA 1LIT Rs.113,TROPICANA 1LTR,1111,92.5833,https://vaibhavthakkarverse.github.io/pepsi/images/tropicana-apple.jpeg,6,TROPICANA 1LTR
